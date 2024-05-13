@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+ 
+}
+:root{
+  --primary-color:#4C98E4;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(6,auto);
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+.box{
+  border-radius: 6px;
+  padding: 10px;
+  border: 2px solid gray;
+  color: var(--primary-color);
+}
+.bg{
+  background-image:url("https://gridbyexample.com/img/tiny_grid.png");
+}
+.box1{
+  grid-column: span 4;
+  background-image:url("https://gridbyexample.com/img/inflicted.png");
+  color: white;
+}
+.box3{
+  color: white;
+  grid-column: span 5;
+  background-color: blueviolet !important;
+}
+.box4{
+  grid-column: span 2;
+  position: relative;
+}
+.box5{
+  grid-column:span 3;
+}
+.box6{
+  grid-column: span 4;
+}
+.box8{
+  grid-column: span 3;
+}
+.box11{
+  grid-column: span 5;
+}
+.flag-new::before{
+    content: "New!";
+    background-color: #087f23;
+    position: absolute;
+    top: -.8rem;
+    left: -.8rem;
+    padding: .3rem .5rem;
+    display: inline-block;
+    color: #fff;
+    font-weight: both;
+    transform: rotate(-20deg);
+}
+p{
+  font-size: 20px;
+}
+/*phone*/
+@media(max-width: 576px){
+  .container{
+  grid-template-columns: 1fr;
+  }
+  .box{
+  grid-column: span 1;
+  transition: 1s;
+  }
+  
+}
+/*tablet*/
+@media(min-width:768px) and (max-width:992px){
+  .box1{
+    grid-column: span 3;
+  }
+  .box2{
+    grid-column: span 2;
+  }
+  .box{
+    transition: 1s;
+  }
+}
+/*laptop*/
+@media(min-width:992px)and (max-width:1024px){
+  .box1{
+    grid-column: span 5;
+  }
+  .box2{
+    grid-column: span 5;
+  }
+  .box{
+    transition: 1s;
+  }
+}
+/*Desktop*/
+@media(min-width:1024px) {
+  .box1{
+    grid-column: span 4;
+  }
+  .box2{
+    grid-column: span 1;
+  }
+  .box4, .box6{
+    grid-column: span 3;
+  }
+  .box5, .box7{
+    grid-column: span 2;
+  }
+  .box{
+    transition: 1s;
+  }
+}
+@media(min-width:1240px){
+  .box1{
+    grid-column: span 5;
+  }
+  .box2{
+    grid-column: span 5;
+  }
+  .box{
+    transition: 1s;
+  }
+ 
+}

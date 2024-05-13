@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Aos scrolling animation</title>
+  <style>
+    .section1{
+      background-color: pink;
+      height: 100vh;
+    }
+
+    .container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 400px;
+      gap: 20px;
+    }
+    .card{
+      background-color: darkblue;
+
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="section1">
+      <p>section1</p>
+    </section>
+  <div class="container">
+    <div class="card card1" data-aos="fade-up" data-aos-duration="3000">1</div>
+    <div class="card card2" data-aos="flip-up"data-aos-duration="1000">2</div>
+    <div class="card card3" data-aos="zoom-in"data-aos-duration="3000">3</div>
+    <div class="card card4">4</div>
+  </div>
+  <img src="../image/Hamburger (1).gif" alt="">
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

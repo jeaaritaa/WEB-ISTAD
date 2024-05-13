@@ -1,0 +1,76 @@
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.box2{
+  transform: rotate(90deg);
+}
+.box:hover{
+  background-color: violet;
+  font-size: 5rem;
+  border-radius: 0px;
+  border-radius: 50%;
+}
+.box{
+  transition-duration: 1s;
+  transition-property: all;
+  transition-delay: 1s; 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box3{
+  /*animation: name duration timing-function
+   delay iteration-count direction fill-mode;*/
+   animation-name: slide;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-out;
+   animation-delay: 5s;
+}
+.box4{
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-timing-function:ease-out;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+@keyframes rotate{
+  0%{
+    transform: translateX(0px) rotate(0deg);
+  }
+  30%{
+    transform: translateX(300px) rotate(300deg);
+  }
+  60%{
+    transform: translateX(-300px) rotate(-300deg);
+  }
+  100%{
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+@keyframes slide{
+  0%{
+    transform: translateX(0px);
+  }
+  30%{
+    transform: translateX(300px);
+  }
+  60%{
+    transform: translateX(-300px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}

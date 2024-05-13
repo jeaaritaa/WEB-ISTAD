@@ -1,0 +1,63 @@
+/* type Selector*/
+h1{
+  color: brown;
+}
+/* class selector*/
+.H2{
+  color: rgb(23, 134, 97);
+  text-align: center;
+}
+/* id selector*/
+#title{
+  color: green;
+}
+/* attribute selector*/
+a[target]{
+  color: black;
+}
+
+/* universal selector*/
+*{
+  color: blueviolet;
+}
+span:hover{
+  color: #8a8abe;
+
+}
+/* class selector*/
+.box{
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  margin: 10px;
+}
+/* Group selector*/
+h1,p{
+  color: hotpink;
+}
+/* nested selector or combinator selector*/
+div h3{
+  color: blue;
+}
+div>h2 {
+  color: green;
+}
+/* pseudo selector*/
+a:hover{
+  color: red;
+}
+a:visited{
+  color: green;
+}
+p::first-line{
+  color: red;
+}
+p::first-letter{
+  color: green;
+}
+.box{
+  width: 100px;
+  height: 200px;
+  background-color: coral;
+  overflow: hidden;
+}

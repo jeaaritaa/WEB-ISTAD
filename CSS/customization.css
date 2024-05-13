@@ -1,0 +1,8 @@
+:root{
+  --primary-color: darkblue;
+  --secondar-color: darkorange;
+  --accent-color: lightblue;
+}
+.container{
+  background-color: var(--secondar-color);
+}

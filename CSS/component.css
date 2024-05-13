@@ -1,0 +1,8 @@
+.accordion-button:not(.collapsed){
+  background-color: red !important;
+  color: white !important;
+}
+.row{
+  gap: 15px;
+  margin-top: 15px;
+}

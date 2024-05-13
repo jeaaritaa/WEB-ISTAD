@@ -1,0 +1,17 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+}
+.box{
+  background-color:#3498DB;
+  border-radius: 8px;
+  color: white;
+  display: grid;
+  place-content: center;
+}
+.box4, .box7{
+background-color: #1f4b8dc3;
+grid-column: span 2;
+}

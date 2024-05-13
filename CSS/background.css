@@ -1,0 +1,59 @@
+
+/* normal background image and other properties */
+.bg-image {
+  background-image: url("https://i.pinimg.com/564x/62/43/17/6243171dfde0aa1a657c06ae50af7172.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: top; */
+  border: 1px solid black;
+  margin: auto;
+}
+/* gradient background color */
+.linear-gradient {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, white, black);
+}
+.radial-gradient {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(50% 50%, white, lightblue);
+}
+
+/* background attachment style */
+h2 {
+  text-align: center;
+  margin-top: 48px;
+}
+
+div {
+  height: 200px;
+  width: 50%;
+  max-width: 600px;
+  margin: 32px auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.scroll {
+  background: url("https://i.pinimg.com/564x/a6/dc/c3/a6dcc3e8d74f70dbce72e6204c49ede9.jpg");
+  background-attachment: scroll;
+}
+
+.fixed {
+  background: url("https://i.pinimg.com/564x/a6/dc/c3/a6dcc3e8d74f70dbce72e6204c49ede9.jpg");
+  background-attachment: fixed;
+}
+
+.local {
+  background: url("https://i.pinimg.com/564x/a6/dc/c3/a6dcc3e8d74f70dbce72e6204c49ede9.jpg");
+  background-attachment: local;
+}
+
+.expand {
+  height: 400px;
+  width: 100%;
+}
+.space {
+  margin-bottom: 10px;
+}

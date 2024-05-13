@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../image/html.jpg" type="image/x-icon">
+  <title>Table</title>
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  
+  <table  border="1" width="700" align="center" cellpadding="10px" height="350px">
+    <caption style="font-size: 20px; padding: 10px;" >Schedule of Foundation Student</caption>
+    <thead>
+      <tr bgcolor="#F2D7D5 ">
+        <th colspan="2">Name</th>
+        <th>Class</th>
+        <th colspan="3">Course</th>
+      </tr>
+    </thead>
+    <tbody>
+      <colgroup>
+        <col span="2"
+        bgcolor="#ABEBC6"
+        >
+      </colgroup>
+      <colgroup>
+        <col span="4"
+        background="https://i.pinimg.com/564x/5a/75/90/5a759050d3194ca8bc858f3bb1889b69.jpg" 
+        >
+      </colgroup>
+      <tr>
+        <td>1</td>
+        <td>Sopheary Oeun</td>
+        <td>Class1</td>
+        <td>Html,Css</td>
+        <td colspan="2">javascript</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Torn Visal</td>
+        <td>Class2</td>
+        <td>Git</td>
+        <td>Database</td>
+        <td>Deploment</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jessica</td>
+        <td>Class3</td>
+        <td colspan="3">Python</td>
+      </tr>
+      <tr>
+        <td rowspan="3">4</td>
+        <td rowspan="3">Jennie</td>
+        <td rowspan="3">Class4</td>
+        <td colspan="3">Java</td>
+      </tr>
+      <tr>
+        <td colspan="3">Devops</td>
+      </tr>
+      <tr>
+        <td colspan="3">Spring Boot</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr bgcolor="whitesmoke">
+        <td colspan="6">Total 4 Student</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

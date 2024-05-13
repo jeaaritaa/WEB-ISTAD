@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  justify-content: space-evenly;
+  width: 80%;
+  height: 150vh;
+  position: relative;
+  background-color: rgb(209, 202, 202);
+}
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  margin: 20px;
+}
+.box1{
+  position: relative;
+  left: 50px;
+  background-color:red;
+}
+.box2{
+  position: absolute;
+  right: 100px;
+  background-color: green;
+}
+.box3{
+  position: fixed;
+  right:0px;
+  background-color: blue;
+}
+.box4{
+  position: sticky;
+  top: 0px;
+  background-color: blueviolet;
+}
+.box5{
+  position: static;
+  left: 200px;
+  background-color: chocolate;
+}

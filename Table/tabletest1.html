@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TableTest1</title>
+  <link rel="shortcut icon" href="../image/html.jpg" type="image/x-icon">
+  <style>
+    table{
+      border-collapse: collapse;
+    }
+    tfoot{
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <table border="1" width="500" align="center">
+    <colgroup>
+    <col span="3"
+    bgcolor="#F1948A"
+    />
+  </colgroup>
+    <thead>
+      <tr bgcolor="#AED6F1  ">
+        <th rowspan="2">Name</th>
+        <th rowspan="2">ID</th>
+        <th colspan="2">Membership Date</th>
+        <th rowspan="2">balance</th>
+      </tr>
+      <tr>
+        <th style="background-color: rgba(160, 232, 166, 0.653);">join</th>
+        <th style="background-color: rgba(240, 184, 209, 0.646);">canceled</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td bgcolor="#EBDEF0 ">Magaret Nguyen</td>
+        <td>427311</td>
+        <td>june 3 2010</td>
+        <td>n/a</td>
+        <td>0.00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EBDEF0 ">Advard Galinski</td>
+        <td bgcolor="#F2F3F4 ">601942</td>
+        <td bgcolor="#F2F3F4">October 12 2010</td>
+        <td bgcolor="#F2F3F4">april 18 2017</td>
+        <td bgcolor="#F2F3F4">15.00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#EBDEF0 ">Hoshi Nakamura</td>
+        <td>533175</td>
+        <td>july 10 2000</td>
+        <td>n/a</td>
+        <td>37.00</td>
+      </tr>
+    </tbody>
+    <tfoot bgcolor="#AED6F1">
+      <tr> 
+        <td colspan="4">Total balance</td>
+        <td>42.00</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
